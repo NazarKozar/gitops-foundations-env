@@ -3,4 +3,4 @@
 username="$1"
 
 find . -type f -exec sh -c \
-  'LC_ALL=C sed -i "" "s/nazarkozar/'"$username"'/g" "$@"' _ {} +
+  'LC_ALL=C sed -i "" "s/{dockerHubUsername}/'"$username"'/g" "$@"' _ {} +
